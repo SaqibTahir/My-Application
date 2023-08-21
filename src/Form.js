@@ -51,7 +51,6 @@ export default function Form(props) {
         <h2>Preview</h2>
         <p>{Text}</p>
       </div>
-        kjgighjk
      
     </>
   )

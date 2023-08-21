@@ -3,13 +3,13 @@ import './App.css';
 import Navbar from './Navbar';
 import Form from './Form';
 import Alert from './Alert';
-import About from './About';
-import {
-  BrowserRouter as Router,
-  Routes,
-  Route,
-  // Link
-} from "react-router-dom";
+// import About from './About';
+// import {
+//   BrowserRouter as Router,
+//   Routes,
+//   Route,
+//   // Link
+// } from "react-router-dom";
 
 
 function App() {
@@ -51,16 +51,17 @@ function App() {
   }
   return (
     <>
-      <Router>
+      {/* <Router> */}
         <Navbar title='BOSS' mode={Mode} togglemode={Togglemode} showwarning={showwarning} extra={extra}/>
         <Alert alert={alert} />
         <div className='container my-2' >
-          <Routes>
-            <Route exact path="/about" element={<About mode={Mode} togglemode={Togglemode} />} />
-            <Route exact path="/" element={<Form title='Default Text APP' Showalert={Showalert} mode={Mode} extra={extra} showwarning={showwarning}  />}/>
-          </Routes>
+          {/* <Routes> */}
+            {/* <Route exact path="/about" element={<About mode={Mode} togglemode={Togglemode} />} /> */}
+            {/* <Route exact path="/" />}/> */}
+          {/* </Routes> */}
+          <Form title='Default Text APP' Showalert={Showalert} mode={Mode} extra={extra} showwarning={showwarning}/> 
         </div>
-      </Router>
+      {/* </Router> */}
 
 
 

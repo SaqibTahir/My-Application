@@ -38,12 +38,12 @@ export default function Form(props) {
       <div className='container' style={{ color: props.mode === 'light' ? 'black' : 'white' }} >
         <div className="mb-3">
           <h2>{props.title}</h2>
-          <textarea className="form-control" rows="8" value={Text} onChange={handleOnChange} style={{ backgroundColor: props.mode === 'dark' ? 'gray' : 'white', color: props.mode === 'dark' ? 'white' : 'black' }}></textarea>
+          <textarea className="form-control" rows="7" value={Text} onChange={handleOnChange} style={{ backgroundColor: props.mode === 'dark' ? 'gray' : 'white', color: props.mode === 'dark' ? 'white' : 'black' }}></textarea>
         </div>
-        <button className={` btn text-white bg-primary ${props.extra}`} onClick={Convertup}>UpperCase</button>
-        <button className={`btn text-white bg-primary ${props.extra} mx-2 my-1`} onClick={Convertcap}>Capitilize Word</button>
-        <button className={`btn text-white bg-primary ${props.extra} mx-2 my-1`} onClick={Cleartext}>clear</button>
-        <button className={`btn text-white bg-primary ${props.extra} mx-2`} onClick={Removespaces}>Remove Extra Spaces</button>
+        <button disabled={Text.length===0} className={` btn text-white bg-primary ${props.extra}`} onClick={Convertup}>UpperCase</button>
+        <button disabled={Text.length===0}className={`btn text-white bg-primary ${props.extra} mx-2 my-1`} onClick={Convertcap}>Capitilize Word</button>
+        <button disabled={Text.length===0}className={`btn text-white bg-primary ${props.extra} mx-2 my-1`} onClick={Cleartext}>clear</button>
+        <button disabled={Text.length===0}className={`btn text-white bg-primary ${props.extra} mx-2`} onClick={Removespaces}>Remove Extra Spaces</button>
       </div>
       <div className="container my-3" style={{ color: props.mode === 'light' ? 'black' : 'white' }}>
         <h2>Text Summary Here </h2>

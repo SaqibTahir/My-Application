@@ -22,7 +22,7 @@ export default function Navbar(props) {
             <div className="form-check form-switch">
             <input className={`form-check-input bg-${props.mode === 'light' ? 'dark' : 'light'}`} type="checkbox" role="switch" id="flexSwitchCheckDefault" onClick={props.togglemode} />
           </div>
-          <button className='mx-2 bg-success border border-dark rounded ' style={{ height: 30, width: 30 }} onClick={props.showwarning}></button>
+          <button className='mx-2 bg-success border border-dark rounded ' style={{ height: '30px', width: '30px' }} onClick={props.showwarning}></button>
           </div>
         </div>
       </nav>
